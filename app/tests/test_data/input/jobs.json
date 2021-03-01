@@ -1,0 +1,7 @@
+{"job_id": 1, "advertiser_id":  1, "job_title": "accountant", "job_level": "associate"}
+{"job_id": 2, "advertiser_id":  1, "job_title": "data engineer", "job_level": "senior"}
+{"job_id": 3, "advertiser_id":  1, "job_title": "software engineer", "job_level": "senior"}
+{"job_id": 4, "advertiser_id":  1, "job_title": "mechanical engineer", "job_level": "senior"}
+{"job_id": 5, "advertiser_id":  2, "job_title": "data engineer", "job_level": "associate"}
+{"job_id": 6, "advertiser_id":  2, "job_title": "data engineer", "job_level": "junior"}
+{"job_id": 7, "advertiser_id":  2, "job_title": "HR Business Partner", "job_level": "senior"}
