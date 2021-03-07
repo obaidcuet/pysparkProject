@@ -10,6 +10,7 @@ References:
 
 ### Next steps: 
 1. isolate business logic in domain folder (done)
-2. try package and spark-submit to EMR (next)
-3. prepare test cases based onn columns logic and total output
-4. docker env for dev/test
+2. create another pipeline without sql   
+3. try package and spark-submit to EMR (next)
+4. prepare test cases based onn columns logic and total output
+5. docker env for dev/test

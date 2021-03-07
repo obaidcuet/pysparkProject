@@ -1,0 +1,7 @@
+{"job_id": 1, "advertiser_id":  1, "is_engineering_ad": 0, "is_entry_level_ad":1}
+{"job_id": 2, "advertiser_id":  1, "is_engineering_ad": 1, "is_entry_level_ad":0}
+{"job_id": 3, "advertiser_id":  1, "is_engineering_ad": 1, "is_entry_level_ad":0}
+{"job_id": 4, "advertiser_id":  1, "is_engineering_ad": 1, "is_entry_level_ad":0}
+{"job_id": 5, "advertiser_id":  2, "is_engineering_ad": 1, "is_entry_level_ad":1}
+{"job_id": 6, "advertiser_id":  2, "is_engineering_ad": 1, "is_entry_level_ad":1}
+{"job_id": 7, "advertiser_id":  2, "is_engineering_ad": 0, "is_entry_level_ad":0}
