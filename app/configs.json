@@ -11,8 +11,12 @@
         "jobs": "tests/test_data/input/jobs.json"
       },
       "output_data_location": {
-        "job_advertiser_stats": "tests/test_data/output/job_advertiser_stats/",
-        "job_listing_stats": "tests/test_data/output/job_listing_stats/"
+        "job_listing_stats": "tests/test_data/output/job_listing_stats/",
+        "job_advertiser_stats": "tests/test_data/output/job_advertiser_stats/"
+      },
+      "test_data_location": {
+        "job_listing_stats": "tests/test_data/output/test_job_advertiser_stats.json",
+        "job_advertiser_stats": "tests/test_data/output/test_job_listing_stats.json"
       }
     },
     "prod": {

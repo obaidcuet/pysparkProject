@@ -2,6 +2,7 @@ import json
 from pyspark.sql import SparkSession
 from pyspark import SparkConf
 
+
 # create spark session based on parameters in configs.json file
 def create_spark_session_using_configs_file() -> SparkSession:
     with open("configs.json", "r") as config_file:

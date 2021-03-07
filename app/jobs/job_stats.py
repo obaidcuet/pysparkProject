@@ -1,6 +1,4 @@
 from pyspark.sql import SparkSession, DataFrame
-from pyspark.sql import functions as F
-
 from app.domain.hirer import udf_job_stats as js
 
 

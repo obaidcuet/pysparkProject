@@ -9,7 +9,9 @@ def _is_entry_level_ad(job_level: str) -> int:
     :param job_level: Job level from job dataset
     :return: if entry level job then 1, else 0
     """
-    if any(re.findall(r'JUNIOR|ASSOCIATE', job_level, re.IGNORECASE)):
+    if job_level is None:
+        return 0
+    elif any(re.findall(r'JUNIOR|ASSOCIATE', job_level, re.IGNORECASE)):
         return 1
     else:
         return 0
@@ -20,7 +22,9 @@ def _is_engineering_ad(job_title: str) -> int:
     :param job_title: Job title from job dataset
     :return: if engineering job then 1, else 0
     """
-    if any(re.findall(r'ENGINEER', job_title, re.IGNORECASE)):
+    if job_title is None:
+        return 0
+    elif any(re.findall(r'ENGINEER', job_title, re.IGNORECASE)):
         return 1
     else:
         return 0

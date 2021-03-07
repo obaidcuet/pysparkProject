@@ -1,6 +1,6 @@
 import json
 import argparse
-from pyspark.sql import SparkSession, DataFrame
+from pyspark.sql import SparkSession
 from app.dependencies import init_spark
 from app.jobs import job_stats
 

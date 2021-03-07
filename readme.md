@@ -8,6 +8,12 @@ References:
 - set HADOOP_HOME to point downloaded location of winutils(for windows)
 - project directory structure
 
+### pre-requisites
+- setup pycharm
+- setup python project with pipenv (install python pyspark inside that)
+- setup pytest as testing tools in project
+- set HADOOP_HOME environment variable to downloaded location for hadoop winutils 
+
 ### Next steps: 
 1. isolate business logic in domain folder (done)
 2. create another pipeline without sql   
