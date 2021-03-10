@@ -1,5 +1,5 @@
 from pyspark.sql import SparkSession, DataFrame
-from app.domain.hirer import udf_job_stats as js
+from domain.hirer import udf_job_stats as js
 
 
 def _extract_advertiser(spark: SparkSession,

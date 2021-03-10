@@ -1,8 +1,8 @@
 import json
 import argparse
 from pyspark.sql import SparkSession
-from app.dependencies import init_spark
-from app.jobs import job_stats
+from dependencies import init_spark
+from jobs import job_stats
 
 
 def _parse_arguments():

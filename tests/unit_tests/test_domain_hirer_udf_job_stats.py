@@ -1,4 +1,5 @@
-from app.domain.hirer import udf_job_stats
+from domain.hirer import udf_job_stats
+
 
 # testing "_is_entry_level_ad"
 def test_is_entry_level_ad():

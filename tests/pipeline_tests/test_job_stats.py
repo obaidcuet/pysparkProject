@@ -3,8 +3,8 @@ import pytest
 
 from pyspark.sql import SparkSession, DataFrame
 
-from app.dependencies import init_spark
-from app.jobs import job_stats
+from dependencies import init_spark
+from jobs import job_stats
 
 
 # read config
@@ -23,12 +23,13 @@ def spark(config: dict):
     # -------------- setup ------------
     # boilerplate codes
     spark: SparkSession = init_spark.create_spark_session_using_configs_file(config, 'dev')
+    print("\n---- spark session created ----")
     # start pipeline job with dev env to generate output using dev data
     job_stats.run_job(spark, config, 'dev')
     yield spark # this will be used in module-wide in this module
     # ------------- teardown ----------
     spark.stop()
-
+    print("\n---- spark session stopped ----")
 
 # tests job_listing_stats datasets
 def test_job_listing_stats(spark: SparkSession,
