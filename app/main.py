@@ -19,11 +19,11 @@ def main():
     with open("configs.json", "r") as config_file:
         config: dict = json.load(config_file)
 
-    spark: SparkSession = init_spark.create_spark_session_using_configs_file()
+    spark: SparkSession = init_spark.create_spark_session_using_configs_file(config, 'prod')
     print(spark.sparkContext.getConf().getAll())
 
     # start pipeline job
-    job_stats.run_job(spark, config, 'dev')
+    job_stats.run_job(spark, config, 'prod')
 
 
 if __name__ == "__main__":

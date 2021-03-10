@@ -4,14 +4,11 @@ from pyspark import SparkConf
 
 
 # create spark session based on parameters in configs.json file
-def create_spark_session_using_configs_file() -> SparkSession:
-    with open("configs.json", "r") as config_file:
-        config: dict = json.load(config_file)
-
+def create_spark_session_using_configs_file(config: dict, env: str) -> SparkSession:
     # create spark conf with all spark conf values in configs.json file
     spark_conf: SparkConf = SparkConf()
-    for key in config['spark.conf']:
-        spark_conf.set(key, config['spark.conf'][key])
+    for key in config['jobs.conf'][env]['spark.conf']:
+        spark_conf.set(key, config['jobs.conf'][env]['spark.conf'][key])
 
     # create the spark session
     spark: SparkSession = (SparkSession.builder.

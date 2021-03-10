@@ -1,25 +1,26 @@
 {
   "app_name": "pysparkProject",
-  "spark.conf": {
-    "spark.sql.adaptive.enabled": "true"
-  },
   "jobs.conf": {
     "dev": {
+      "spark.conf": {
+        "spark.sql.adaptive.enabled": "true"
+      },
       "npartition": 1,
       "source_data": {
-        "advertiser": "tests/test_data/input/advertisers.json",
-        "jobs": "tests/test_data/input/jobs.json"
+        "advertiser": "test_data/input/advertisers.json",
+        "jobs": "test_data/input/jobs.json",
+        "job_listing_stats": "test_data/input/test_job_listing_stats.json",
+        "job_advertiser_stats": "test_data/input/test_job_advertiser_stats.json"
       },
       "output_data_location": {
-        "job_listing_stats": "tests/test_data/output/job_listing_stats/",
-        "job_advertiser_stats": "tests/test_data/output/job_advertiser_stats/"
-      },
-      "test_data_location": {
-        "job_listing_stats": "tests/test_data/output/test_job_advertiser_stats.json",
-        "job_advertiser_stats": "tests/test_data/output/test_job_listing_stats.json"
+        "job_listing_stats": "test_data/output/job_listing_stats/",
+        "job_advertiser_stats": "test_data/output/job_advertiser_stats/"
       }
     },
     "prod": {
+      "spark.conf": {
+        "spark.sql.adaptive.enabled": "true"
+      },
       "npartition": 128,
       "source_data": {
         "advertiser": "s3://mydatalake/advertisers.json",
@@ -28,7 +29,6 @@
       "output_data_location": {
         "job_advertiser_stats": "s3://mydatalake/job_advertiser_stats/",
         "job_listing_stats": "s3://mydatalake/job_listing_stats/"
-
       }
     }
   }

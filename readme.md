@@ -2,6 +2,8 @@ References:
 - https://github.com/soyelherein/pyspark-cicd-template
 - https://github.com/AlexIoannides/pyspark-example-project
 - https://github.com/pchrabka/PySpark-PyData
+- https://youtu.be/7qMhuVGqGY4
+- https://youtu.be/JJmTO95AoqE
 
 # local setup consideration
 - use pipenv in pycharm
