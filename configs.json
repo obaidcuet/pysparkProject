@@ -8,9 +8,11 @@
       "npartition": 1,
       "source_data": {
         "advertiser": "test_data/input/advertisers.json",
-        "jobs": "test_data/input/jobs.json",
-        "job_listing_stats": "test_data/input/test_job_listing_stats.json",
-        "job_advertiser_stats": "test_data/input/test_job_advertiser_stats.json"
+        "jobs": "test_data/input/jobs.json"
+      },
+      "test_output_location":{
+        "job_listing_stats": "test_data/test_output/test_job_listing_stats.json",
+        "job_advertiser_stats": "test_data/test_output/test_job_advertiser_stats.json"
       },
       "output_data_location": {
         "job_listing_stats": "test_data/output/job_listing_stats/",
