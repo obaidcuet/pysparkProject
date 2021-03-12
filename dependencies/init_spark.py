@@ -11,7 +11,7 @@ def create_spark_session_using_configs_file(config: dict, env: str) -> SparkSess
 
     # create the spark session
     spark: SparkSession = (SparkSession.builder.
-                           appName(config.get("app_name")).
+                           appName(config.get("pyspark project")).
                            config(conf=spark_conf).
                            enableHiveSupport().
                            getOrCreate())
